@@ -18,7 +18,6 @@ public class Department {
     @OneToOne
     private Employee departmentManager;
 
-    // Required by JPA
     public Department() {
     }
 
@@ -28,6 +27,30 @@ public class Department {
 
         this.departmentNumber = departmentNumber;
         this.departmentName = departmentName;
+        this.departmentManager = departmentManager;
+    }
+
+    public long getDepartmentNumber() {
+        return departmentNumber;
+    }
+
+    public void setDepartmentNumber(long departmentNumber) {
+        this.departmentNumber = departmentNumber;
+    }
+
+    public String getDepartmentName() {
+        return departmentName;
+    }
+
+    public void setDepartmentName(String departmentName) {
+        this.departmentName = departmentName;
+    }
+
+    public Employee getDepartmentManager() {
+        return departmentManager;
+    }
+
+    public void setDepartmentManager(Employee departmentManager) {
         this.departmentManager = departmentManager;
     }
 }
