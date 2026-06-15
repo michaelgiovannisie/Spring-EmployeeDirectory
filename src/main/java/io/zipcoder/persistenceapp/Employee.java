@@ -12,7 +12,7 @@ import javax.persistence.ManyToOne;
 public class Employee {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private long employeeNumber;
 
     private String firstName;
